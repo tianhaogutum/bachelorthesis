@@ -1,0 +1,4 @@
+
+projects/quad_swarm_rl/*.bin filter=lfs diff=lfs merge=lfs -text
+projects/swarmlab_aug/*.bin filter=lfs diff=lfs merge=lfs -text
+projects/ filter=lfs diff=lfs merge=lfs -text

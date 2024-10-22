@@ -1,0 +1,120 @@
+{
+    "distance_log": {
+        "0": [
+            6.295949052237083,
+            6.293493851543422,
+            6.28342550463837
+        ],
+        "1": [
+            2.6860927783589696,
+            2.792696636917824,
+            2.8757479294260517
+        ],
+        "2": [
+            2.598005086549876,
+            2.643125260847709,
+            2.7262662521227217
+        ],
+        "3": [
+            0.8433859515623748,
+            1.5053757371925147,
+            1.8559111931860421
+        ],
+        "4": [
+            0.9264691133931706,
+            1.3487406137048719,
+            0.9568524161470254
+        ],
+        "5": [
+            0.3490234435147634,
+            0.25974678057174505,
+            0.26529082110705354
+        ],
+        "6": [
+            0.15766965375944714,
+            0.20808346105937736,
+            0.20023969306453396
+        ],
+        "7": [
+            0.5189986830435814,
+            1.0702966193470143,
+            0.7005372645997442
+        ]
+    },
+    "collisions_log": {
+        "num_collisions": [
+            2
+        ],
+        "num_collisions_with_floor": [
+            2
+        ],
+        "num_collisions_with_room": [
+            2
+        ],
+        "num_collisions_with_wall": [
+            0
+        ],
+        "num_collisions_with_ceiling": [
+            0
+        ],
+        "num_collisions_after_settle": [
+            12
+        ],
+        "num_collisions_obst_quad": [
+            12
+        ],
+        "num_collisions_obst_quad_after_settle": [
+            2
+        ],
+        "num_collisions_obst_quad_3_5": [
+            2
+        ],
+        "num_collisions_obst_quad_5": [
+            2
+        ]
+    },
+    "statistics": {
+        "agent_success_ratio": [
+            0.0
+        ],
+        "agent_deadlock_ratio": [
+            0.125
+        ],
+        "agent_col_ratio": [
+            0.875
+        ],
+        "agent_neighbor_col_ratio": [
+            0.375
+        ],
+        "agent_obst_col_ratio": [
+            0.875
+        ],
+        "min_distance": [
+            0.0851332100779326
+        ],
+        "min_distance_with_obsts": [
+            0.019608428236121078
+        ],
+        "min_distance_to_floor": [
+            5.05
+        ],
+        "min_distance_to_ceiling": [
+            1.9096293411543104
+        ],
+        "min_distance_to_walls": [
+            0.8215327176087701
+        ],
+        "max_distance_between_drones_after_settle": [
+            7.223360344032527
+        ],
+        "max_distance_to_goal": [
+            8.01970346399717
+        ],
+        "min_distance_with_obst1": [
+            0.24669883062279196
+        ],
+        "average_distance_with_obsts": [
+            0.1678510232710017
+        ]
+    }
+}

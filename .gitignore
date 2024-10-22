@@ -1,0 +1,46 @@
+# IDE
+.vscode/
+*.code-workspace
+.idea/
+
+# Python
+venv/
+**/__pycache__/
+build/
+**/*.pyc
+dist
+
+# CARLA
+cache/
+
+# Logging
+log.txt
+
+# Egg
+test_case_generation.egg-info
+
+# Temporary files
+carla_simulation/temp
+docs/jupyter/.ipynb_checkpoints/*
+
+#**/results/*
+
+#docs/jupyter/opensbt-core/results/*
+
+# Testing
+docs/jupyter/opensbt-core
+docs/jupyter/tmp
+docs/jupyter/venv
+docs/jupyter/.ipynb_checkpoints
+
+#build
+*/*egg-info
+*/dist/*
+opensbt.egg-info/dependency_links.txt
+opensbt.egg-info/PKG-INFO
+opensbt.egg-info/requires.txt
+opensbt.egg-info/SOURCES.txt
+opensbt.egg-info/top_level.txt
+
+#tests
+#tests/output/**
