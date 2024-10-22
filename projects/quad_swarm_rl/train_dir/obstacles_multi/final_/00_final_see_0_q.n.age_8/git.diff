@@ -1,0 +1,204 @@
+diff --git a/gym_art/quadrotor_multi/quadrotor_multi.py b/gym_art/quadrotor_multi/quadrotor_multi.py
+index 3d0e760..7ea78c6 100644
+--- a/gym_art/quadrotor_multi/quadrotor_multi.py
++++ b/gym_art/quadrotor_multi/quadrotor_multi.py
+@@ -2,9 +2,16 @@ import copy
+ import time
+ from collections import deque
+ from copy import deepcopy
++import os
++import json
++
++import matplotlib.pyplot as plt
++from mpl_toolkits.mplot3d import Axes3D
++import os
+ 
+ import gymnasium as gym
+ import numpy as np
++from datetime import datetime
+ 
+ from gym_art.quadrotor_multi.aerodynamics.downwash import perform_downwash
+ from gym_art.quadrotor_multi.collisions.obstacles import perform_collision_with_obstacle
+@@ -21,6 +28,12 @@ from gym_art.quadrotor_multi.scenarios.mix import create_scenario
+ 
+ 
+ class QuadrotorEnvMulti(gym.Env):
++    # Diff1_start
++    has_executed_reset = False
++    pos_dict = {}
++    call_count = 0 
++    # Diff1_end
++
+     def __init__(self, num_agents, ep_time, rew_coeff, obs_repr,
+                  # Neighbor
+                  neighbor_visible_num, neighbor_obs_type, collision_hitbox_radius, collision_falloff_radius,
+@@ -191,7 +204,11 @@ class QuadrotorEnvMulti(gym.Env):
+             self.frames_since_last_render = self.render_skip_frames = 0
+             self.render_every_nth_frame = 1
+             # # Use this to control rendering speed
+-            self.render_speed = 1.0
++
++            # Diff2_start,from 1.0 to 10.0
++            self.render_speed = 10.0
++            # Diff2_end
++
+             self.quads_formation_size = 2.0
+             self.all_collisions = {}
+ 
+@@ -336,7 +353,41 @@ class QuadrotorEnvMulti(gym.Env):
+                 num_obstacles=self.num_obstacles, scene_index=i
+             ))
+ 
++    # Diff3_start
++    @staticmethod
++    def visualize_drones_positions(data):
++        output_dir = '../../pathOfDrones'
++        if not os.path.exists(output_dir):
++            os.makedirs(output_dir)
++        fig = plt.figure()
++        ax = fig.add_subplot(111, projection='3d')
++        for drone_id, positions in data.items():
++            x = [pos[0]+5 for pos in positions]
++            y = [pos[1]+5 for pos in positions]
++            z = [pos[2]+5 for pos in positions]
++            ax.scatter(x, y, z, label=f'Drone {drone_id}')
++        ax.legend()
++        ax.set_xlabel('X')
++        ax.set_ylabel('Y')
++        ax.set_zlabel('Z')
++        current_time = datetime.now().strftime('%Y-%m-%d %H-%M-%S')
++        title = f'Drones Positions - {current_time}'
++        ax.set_title(title)
++        i = QuadrotorEnvMulti.call_count
++        file_name = os.path.join(output_dir, f'{i}_drone_positions_{current_time}.png')
++        plt.savefig(file_name)
++    # Diff3_end
++        
+     def reset(self, obst_density=None, obst_size=None):
++
++        # Diff4_start
++        if(QuadrotorEnvMulti.has_executed_reset):
++            QuadrotorEnvMulti.visualize_drones_positions(QuadrotorEnvMulti.pos_dict)
++            print(QuadrotorEnvMulti.pos_dict)
++            raise RuntimeError("The reset method has already been executed once. Exiting.")
++        QuadrotorEnvMulti.has_executed_reset = True
++        # Diff4_end
++
+         obs, rewards, dones, infos = [], [], [], []
+ 
+         if obst_density:
+@@ -593,7 +644,15 @@ class QuadrotorEnvMulti(gym.Env):
+         # Collect positions after physical interaction
+         for i in range(self.num_agents):
+             self.pos[i, :] = self.envs[i].dynamics.pos
++
++            # Diff5_start
++            if i in QuadrotorEnvMulti.pos_dict:
++                QuadrotorEnvMulti.pos_dict[i].append(self.envs[i].dynamics.pos)
++            else:
++                QuadrotorEnvMulti.pos_dict[i] = [self.envs[i].dynamics.pos]
++            #将信息放进那个静态的字典里面，然后在每次模拟结束之后，执行python直接把生成的轨迹的图像生成出来，然后保存到文件夹里面
+             self.vel[i, :] = self.envs[i].dynamics.vel
++            # Diff5_end
+ 
+         if self_state_update_flag:
+             obs = [e.state_vector(e) for e in self.envs]
+@@ -678,23 +737,21 @@ class QuadrotorEnvMulti(gym.Env):
+                             self.distance_to_goal_5
+                         infos[i]['episode_extra_stats'][f'{scenario_name}/num_collisions_obst_quad_5'] = \
+                             self.distance_to_goal_5
+-
++                        
+             if not self.saved_in_replay_buffer:
++            #if True:
+                 # agent_success_rate: base_success_rate, based on per agent
+                 # 0: collision; 1: no collision
+                 agent_col_flag_list = np.logical_and(self.agent_col_agent, self.agent_col_obst)
+                 agent_success_flag_list = np.logical_and(agent_col_flag_list, self.reached_goal)
+                 agent_success_ratio = 1.0 * np.sum(agent_success_flag_list) / self.num_agents
+-
+                 # agent_deadlock_rate
+                 # Doesn't approach to the goal while no collisions with other objects
+                 agent_deadlock_list = np.logical_and(agent_col_flag_list, 1 - self.reached_goal)
+                 agent_deadlock_ratio = 1.0 * np.sum(agent_deadlock_list) / self.num_agents
+-
+                 # agent_col_rate
+                 # Collide with other drones and obstacles
+                 agent_col_ratio = 1.0 - np.sum(agent_col_flag_list) / self.num_agents
+-
+                 # agent_neighbor_col_rate
+                 agent_neighbor_col_ratio = 1.0 - np.sum(self.agent_col_agent) / self.num_agents
+                 # agent_obst_col_rate
+@@ -717,6 +774,59 @@ class QuadrotorEnvMulti(gym.Env):
+                     infos[i]['episode_extra_stats']['metric/agent_obst_col_rate'] = agent_obst_col_ratio
+                     infos[i]['episode_extra_stats'][f'{scenario_name}/agent_obst_col_rate'] = agent_obst_col_ratio
+ 
++            # Diff6_start
++            data_to_log = {"distance_log": {},
++                           "collisions_log": {},
++                           "statistics":{},
++                           }
++
++            for i in range(len(infos)):
++                    distance_to_goal_1s = infos[i]['episode_extra_stats']['distance_to_goal_1s']
++                    distance_to_goal_3s = infos[i]['episode_extra_stats']['distance_to_goal_3s']
++                    distance_to_goal_5s = infos[i]['episode_extra_stats']['distance_to_goal_5s']
++                    data_to_log["distance_log"][i] = [distance_to_goal_1s, distance_to_goal_3s, distance_to_goal_5s]
++
++            num_collisions = infos[0]['episode_extra_stats']['num_collisions']
++            num_collisions_with_floor = infos[0]['episode_extra_stats']['num_collisions_with_floor']
++            num_collisions_with_room = infos[0]['episode_extra_stats']['num_collisions_with_room']
++            num_collisions_with_wall = infos[0]['episode_extra_stats']['num_collisions_with_wall']
++            num_collisions_with_ceiling = infos[0]['episode_extra_stats']['num_collisions_with_ceiling']
++            num_collisions_after_settle = infos[0]['episode_extra_stats']['num_collisions_after_settle']
++
++            num_collisions_obst_quad = infos[0]['episode_extra_stats']['num_collisions_obst_quad']
++            num_collisions_obst_quad_after_settle = infos[0]['episode_extra_stats']['num_collisions_after_settle']
++            num_collisions_obst_quad_3_5 = infos[0]['episode_extra_stats']['num_collisions_obst_quad_3_5']
++            num_collisions_obst_quad_5 = infos[0]['episode_extra_stats']['num_collisions_obst_quad_5']
++
++            data_to_log["collisions_log"]['num_collisions'] = [num_collisions]
++            data_to_log["collisions_log"]['num_collisions_with_floor'] = [num_collisions_with_floor]
++            data_to_log["collisions_log"]['num_collisions_with_room'] = [num_collisions_with_room]
++            data_to_log["collisions_log"]['num_collisions_with_wall'] = [num_collisions_with_wall]
++            data_to_log["collisions_log"]['num_collisions_with_ceiling'] = [num_collisions_with_ceiling]
++            data_to_log["collisions_log"]['num_collisions_after_settle'] = [num_collisions_after_settle]
++            data_to_log["collisions_log"]['num_collisions_obst_quad'] = [num_collisions_obst_quad]
++            data_to_log["collisions_log"]['num_collisions_obst_quad_after_settle'] = [num_collisions_obst_quad_after_settle]
++            data_to_log["collisions_log"]['num_collisions_obst_quad_3_5'] = [num_collisions_obst_quad_3_5]
++            data_to_log["collisions_log"]['num_collisions_obst_quad_5'] = [num_collisions_obst_quad_5]
++
++            agent_success_ratio = infos[0]['episode_extra_stats']['metric/agent_success_rate']
++            agent_deadlock_ratio = infos[0]['episode_extra_stats']['metric/agent_deadlock_rate']
++            agent_col_ratio = infos[0]['episode_extra_stats']['metric/agent_col_rate']
++            agent_neighbor_col_ratio = infos[0]['episode_extra_stats']['metric/agent_neighbor_col_rate']
++            agent_obst_col_ratio = infos[0]['episode_extra_stats']['metric/agent_obst_col_rate']
++            data_to_log["statistics"]['agent_success_ratio'] = [agent_success_ratio] 
++            data_to_log["statistics"]['agent_deadlock_ratio'] = [agent_deadlock_ratio] 
++            data_to_log["statistics"]['agent_col_ratio'] = [agent_col_ratio] 
++            data_to_log["statistics"]['agent_neighbor_col_ratio'] = [agent_neighbor_col_ratio] 
++            data_to_log["statistics"]['agent_obst_col_ratio'] = [agent_obst_col_ratio] 
++
++            current_dir = os.path.dirname(__file__)
++            log_path1 = os.path.join(current_dir, 'so.log')
++
++            with open(log_path1, 'w', encoding='utf-8') as file:
++                json.dump(data_to_log, file, ensure_ascii=False, indent=4)
++            # Diff6_end
++
+             obs = self.reset()
+             # terminate the episode for all "sub-envs"
+             dones = [True] * len(dones)
+diff --git a/swarm_rl/runs/obstacles/quads_multi_obstacles.py b/swarm_rl/runs/obstacles/quads_multi_obstacles.py
+index 7b819e5..1492070 100644
+--- a/swarm_rl/runs/obstacles/quads_multi_obstacles.py
++++ b/swarm_rl/runs/obstacles/quads_multi_obstacles.py
+@@ -11,7 +11,7 @@ _params = ParamGrid(
+ OBSTACLE_MODEL_CLI = QUAD_BASELINE_CLI_8 + (
+     ' --num_workers=36 --num_envs_per_worker=4 '
+     '--quads_neighbor_visible_num=2 --quads_neighbor_obs_type=pos_vel --quads_encoder_type=attention '
+-    '--with_wandb=True --wandb_project=Quad-Swarm-RL --wandb_user=multi-drones '
++    '--with_wandb=False --wandb_project=Quad-Swarm-RL --wandb_user=multi-drones '
+     '--wandb_group=final'
+ )
+ 

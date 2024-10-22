@@ -1,0 +1,893 @@
+[2024-07-08 11:58:04,502][230365] Saving configuration to ./train_dir/obstacles_multi/final_/00_final_see_0_q.n.age_8/config.json...
+[2024-07-08 11:58:04,518][230365] Rollout worker 0 uses device cpu
+[2024-07-08 11:58:04,518][230365] Rollout worker 1 uses device cpu
+[2024-07-08 11:58:04,518][230365] Rollout worker 2 uses device cpu
+[2024-07-08 11:58:04,518][230365] Rollout worker 3 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 4 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 5 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 6 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 7 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 8 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 9 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 10 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 11 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 12 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 13 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 14 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 15 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 16 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 17 uses device cpu
+[2024-07-08 11:58:04,519][230365] Rollout worker 18 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 19 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 20 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 21 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 22 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 23 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 24 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 25 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 26 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 27 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 28 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 29 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 30 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 31 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 32 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 33 uses device cpu
+[2024-07-08 11:58:04,520][230365] Rollout worker 34 uses device cpu
+[2024-07-08 11:58:04,521][230365] Rollout worker 35 uses device cpu
+[2024-07-08 11:58:04,583][230365] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-07-08 11:58:04,583][230365] InferenceWorker_p0-w0: min num requests: 12
+[2024-07-08 11:58:04,671][230365] Starting all processes...
+[2024-07-08 11:58:04,671][230365] Starting process learner_proc0
+[2024-07-08 11:58:04,721][230365] Starting all processes...
+[2024-07-08 11:58:04,809][230365] Starting process inference_proc0-0
+[2024-07-08 11:58:04,810][230365] Starting process rollout_proc0
+[2024-07-08 11:58:04,811][230365] Starting process rollout_proc1
+[2024-07-08 11:58:04,811][230365] Starting process rollout_proc2
+[2024-07-08 11:58:04,817][230365] Starting process rollout_proc3
+[2024-07-08 11:58:04,817][230365] Starting process rollout_proc4
+[2024-07-08 11:58:04,817][230365] Starting process rollout_proc5
+[2024-07-08 11:58:04,818][230365] Starting process rollout_proc6
+[2024-07-08 11:58:04,818][230365] Starting process rollout_proc7
+[2024-07-08 11:58:04,819][230365] Starting process rollout_proc8
+[2024-07-08 11:58:04,820][230365] Starting process rollout_proc9
+[2024-07-08 11:58:04,820][230365] Starting process rollout_proc10
+[2024-07-08 11:58:04,826][230365] Starting process rollout_proc11
+[2024-07-08 11:58:04,826][230365] Starting process rollout_proc12
+[2024-07-08 11:58:04,826][230365] Starting process rollout_proc13
+[2024-07-08 11:58:04,827][230365] Starting process rollout_proc14
+[2024-07-08 11:58:04,827][230365] Starting process rollout_proc15
+[2024-07-08 11:58:04,838][230365] Starting process rollout_proc16
+[2024-07-08 11:58:04,840][230365] Starting process rollout_proc17
+[2024-07-08 11:58:04,955][230365] Starting process rollout_proc18
+[2024-07-08 11:58:04,972][230365] Starting process rollout_proc19
+[2024-07-08 11:58:04,973][230365] Starting process rollout_proc20
+[2024-07-08 11:58:04,973][230365] Starting process rollout_proc21
+[2024-07-08 11:58:04,973][230365] Starting process rollout_proc22
+[2024-07-08 11:58:04,973][230365] Starting process rollout_proc23
+[2024-07-08 11:58:04,973][230365] Starting process rollout_proc24
+[2024-07-08 11:58:04,991][230365] Starting process rollout_proc25
+[2024-07-08 11:58:05,021][230365] Starting process rollout_proc26
+[2024-07-08 11:58:05,022][230365] Starting process rollout_proc27
+[2024-07-08 11:58:05,027][230365] Starting process rollout_proc28
+[2024-07-08 11:58:05,027][230365] Starting process rollout_proc29
+[2024-07-08 11:58:05,040][230365] Starting process rollout_proc30
+[2024-07-08 11:58:05,041][230365] Starting process rollout_proc31
+[2024-07-08 11:58:05,044][230365] Starting process rollout_proc32
+[2024-07-08 11:58:05,044][230365] Starting process rollout_proc33
+[2024-07-08 11:58:05,057][230365] Starting process rollout_proc34
+[2024-07-08 11:58:05,074][230365] Starting process rollout_proc35
+[2024-07-08 11:58:12,610][230505] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-07-08 11:58:12,610][230505] Set environment var CUDA_VISIBLE_DEVICES to '0' (GPU indices [0]) for inference process 0
+[2024-07-08 11:58:12,643][230505] Num visible devices: 1
+[2024-07-08 11:58:14,754][230478] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-07-08 11:58:14,767][230478] Set environment var CUDA_VISIBLE_DEVICES to '0' (GPU indices [0]) for learning process 0
+[2024-07-08 11:58:14,818][230508] Worker 1 uses CPU cores [1]
+[2024-07-08 11:58:14,819][230478] Num visible devices: 1
+[2024-07-08 11:58:14,930][230478] WARNING! It is generally recommended to enable Fixed KL loss (https://arxiv.org/pdf/1707.06347.pdf) for continuous action tasks to avoid potential numerical issues. I.e. set --kl_loss_coeff=0.1
+[2024-07-08 11:58:14,930][230478] Setting fixed seed 0
+[2024-07-08 11:58:14,933][230478] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-07-08 11:58:14,934][230478] Initializing actor-critic model on device cuda:0
+[2024-07-08 11:58:15,285][230478] Created Actor Critic model with architecture:
+[2024-07-08 11:58:15,286][230478] ActorCriticSeparateWeights(
+  (obs_normalizer): ObservationNormalizer()
+  (actor_encoder): QuadMultiHeadAttentionEncoder(
+    (self_embed_layer): Sequential(
+      (0): Linear(in_features=19, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (neighbor_embed_layer): Sequential(
+      (0): Linear(in_features=12, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (obstacle_embed_layer): Sequential(
+      (0): Linear(in_features=9, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (attention_layer): MultiHeadAttention(
+      (w_qs): Linear(in_features=256, out_features=1024, bias=False)
+      (w_ks): Linear(in_features=256, out_features=1024, bias=False)
+      (w_vs): Linear(in_features=256, out_features=1024, bias=False)
+      (attention): ScaledDotProductAttention()
+      (fc): Linear(in_features=1024, out_features=256, bias=False)
+      (layer_norm): LayerNorm((256,), eps=1e-06, elementwise_affine=True)
+    )
+    (feed_forward): Sequential(
+      (0): Linear(in_features=768, out_features=512, bias=True)
+      (1): Tanh()
+    )
+  )
+  (actor_core): ModelCoreIdentity()
+  (critic_encoder): QuadMultiHeadAttentionEncoder(
+    (self_embed_layer): Sequential(
+      (0): Linear(in_features=19, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (neighbor_embed_layer): Sequential(
+      (0): Linear(in_features=12, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (obstacle_embed_layer): Sequential(
+      (0): Linear(in_features=9, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (attention_layer): MultiHeadAttention(
+      (w_qs): Linear(in_features=256, out_features=1024, bias=False)
+      (w_ks): Linear(in_features=256, out_features=1024, bias=False)
+      (w_vs): Linear(in_features=256, out_features=1024, bias=False)
+      (attention): ScaledDotProductAttention()
+      (fc): Linear(in_features=1024, out_features=256, bias=False)
+      (layer_norm): LayerNorm((256,), eps=1e-06, elementwise_affine=True)
+    )
+    (feed_forward): Sequential(
+      (0): Linear(in_features=768, out_features=512, bias=True)
+      (1): Tanh()
+    )
+  )
+  (critic_core): ModelCoreIdentity()
+  (actor_decoder): MlpDecoder(
+    (mlp): Identity()
+  )
+  (critic_decoder): MlpDecoder(
+    (mlp): Identity()
+  )
+  (critic_linear): Linear(in_features=512, out_features=1, bias=True)
+  (action_parameterization): ActionParameterizationContinuousNonAdaptiveStddev(
+    (distribution_linear): Linear(in_features=512, out_features=4, bias=True)
+  )
+)
+[2024-07-08 11:58:16,047][230507] Worker 0 uses CPU cores [0]
+[2024-07-08 11:58:16,470][230538] Worker 7 uses CPU cores [7]
+[2024-07-08 11:58:16,542][230548] Worker 20 uses CPU cores [4]
+[2024-07-08 11:58:16,595][230550] Worker 22 uses CPU cores [6]
+[2024-07-08 11:58:16,743][230537] Worker 6 uses CPU cores [6]
+[2024-07-08 11:58:16,804][230540] Worker 9 uses CPU cores [1]
+[2024-07-08 11:58:17,097][230535] Worker 15 uses CPU cores [7]
+[2024-07-08 11:58:17,278][230546] Worker 18 uses CPU cores [2]
+[2024-07-08 11:58:17,296][230516] Worker 2 uses CPU cores [2]
+[2024-07-08 11:58:17,538][230605] Worker 30 uses CPU cores [6]
+[2024-07-08 11:58:17,599][230541] Worker 13 uses CPU cores [5]
+[2024-07-08 11:58:17,637][230640] Worker 33 uses CPU cores [2, 3]
+[2024-07-08 11:58:17,654][230551] Worker 23 uses CPU cores [7]
+[2024-07-08 11:58:17,680][230539] Worker 8 uses CPU cores [0]
+[2024-07-08 11:58:17,687][230533] Worker 16 uses CPU cores [0]
+[2024-07-08 11:58:17,901][230524] Worker 5 uses CPU cores [5]
+[2024-07-08 11:58:17,958][230543] Worker 4 uses CPU cores [4]
+[2024-07-08 11:58:18,091][230542] Worker 14 uses CPU cores [6]
+[2024-07-08 11:58:18,149][230559] Worker 24 uses CPU cores [0]
+[2024-07-08 11:58:18,152][230536] Worker 3 uses CPU cores [3]
+[2024-07-08 11:58:18,177][230544] Worker 10 uses CPU cores [2]
+[2024-07-08 11:58:18,244][230534] Worker 17 uses CPU cores [1]
+[2024-07-08 11:58:18,254][230547] Worker 19 uses CPU cores [3]
+[2024-07-08 11:58:18,290][230478] Using optimizer <class 'torch.optim.adam.Adam'>
+[2024-07-08 11:58:18,298][230478] No checkpoints found
+[2024-07-08 11:58:18,300][230478] Did not load from checkpoint, starting from scratch!
+[2024-07-08 11:58:18,309][230478] Initialized policy 0 weights for model version 0
+[2024-07-08 11:58:18,323][230478] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-07-08 11:58:18,325][230478] LearnerWorker_p0 finished initialization!
+[2024-07-08 11:58:18,559][230545] Worker 11 uses CPU cores [3]
+[2024-07-08 11:58:18,583][230639] Worker 34 uses CPU cores [4, 5]
+[2024-07-08 11:58:18,578][230655] Worker 35 uses CPU cores [6, 7]
+[2024-07-08 11:58:18,645][230549] Worker 21 uses CPU cores [5]
+[2024-07-08 11:58:18,782][230621] Worker 32 uses CPU cores [0, 1]
+[2024-07-08 11:58:18,843][230583] Worker 27 uses CPU cores [3]
+[2024-07-08 11:58:18,847][230613] Worker 29 uses CPU cores [5]
+[2024-07-08 11:58:18,879][230582] Worker 25 uses CPU cores [1]
+[2024-07-08 11:58:18,925][230629] Worker 28 uses CPU cores [4]
+[2024-07-08 11:58:18,981][230532] Worker 12 uses CPU cores [4]
+[2024-07-08 11:58:18,993][230567] Worker 26 uses CPU cores [2]
+[2024-07-08 11:58:19,021][230631] Worker 31 uses CPU cores [7]
+[2024-07-08 11:58:19,689][230365] Inference worker 0-0 is ready!
+[2024-07-08 11:58:19,700][230365] All inference workers are ready! Signal rollout workers to start!
+[2024-07-08 11:58:22,666][230365] Fps is (10 sec: nan, 60 sec: nan, 300 sec: nan). Total num frames: 0. Throughput: 0: nan. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 11:58:24,581][230365] Heartbeat connected on Batcher_0
+[2024-07-08 11:58:24,585][230365] Heartbeat connected on LearnerWorker_p0
+[2024-07-08 11:58:24,624][230365] Heartbeat connected on InferenceWorker_p0-w0
+[2024-07-08 11:58:27,172][230365] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 11:58:32,189][230365] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 11:58:37,192][230365] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 11:58:42,182][230365] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 11:58:47,184][230365] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 11:58:52,221][230365] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 11:58:57,185][230365] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 11:59:02,182][230365] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:04:18,703][231885] Saving configuration to ./train_dir/obstacles_multi/final_/00_final_see_0_q.n.age_8/config.json...
+[2024-07-08 12:04:18,730][231885] Rollout worker 0 uses device cpu
+[2024-07-08 12:04:18,730][231885] Rollout worker 1 uses device cpu
+[2024-07-08 12:04:18,730][231885] Rollout worker 2 uses device cpu
+[2024-07-08 12:04:18,730][231885] Rollout worker 3 uses device cpu
+[2024-07-08 12:04:18,730][231885] Rollout worker 4 uses device cpu
+[2024-07-08 12:04:18,730][231885] Rollout worker 5 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 6 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 7 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 8 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 9 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 10 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 11 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 12 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 13 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 14 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 15 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 16 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 17 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 18 uses device cpu
+[2024-07-08 12:04:18,731][231885] Rollout worker 19 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 20 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 21 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 22 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 23 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 24 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 25 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 26 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 27 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 28 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 29 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 30 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 31 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 32 uses device cpu
+[2024-07-08 12:04:18,732][231885] Rollout worker 33 uses device cpu
+[2024-07-08 12:04:18,733][231885] Rollout worker 34 uses device cpu
+[2024-07-08 12:04:18,733][231885] Rollout worker 35 uses device cpu
+[2024-07-08 12:04:18,806][231885] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-07-08 12:04:18,807][231885] InferenceWorker_p0-w0: min num requests: 12
+[2024-07-08 12:04:18,892][231885] Starting all processes...
+[2024-07-08 12:04:18,892][231885] Starting process learner_proc0
+[2024-07-08 12:04:18,942][231885] Starting all processes...
+[2024-07-08 12:04:19,032][231885] Starting process inference_proc0-0
+[2024-07-08 12:04:19,032][231885] Starting process rollout_proc0
+[2024-07-08 12:04:19,032][231885] Starting process rollout_proc1
+[2024-07-08 12:04:19,032][231885] Starting process rollout_proc2
+[2024-07-08 12:04:19,032][231885] Starting process rollout_proc3
+[2024-07-08 12:04:19,032][231885] Starting process rollout_proc4
+[2024-07-08 12:04:19,032][231885] Starting process rollout_proc5
+[2024-07-08 12:04:19,032][231885] Starting process rollout_proc6
+[2024-07-08 12:04:19,033][231885] Starting process rollout_proc7
+[2024-07-08 12:04:19,033][231885] Starting process rollout_proc8
+[2024-07-08 12:04:19,033][231885] Starting process rollout_proc9
+[2024-07-08 12:04:19,034][231885] Starting process rollout_proc10
+[2024-07-08 12:04:19,035][231885] Starting process rollout_proc11
+[2024-07-08 12:04:19,035][231885] Starting process rollout_proc12
+[2024-07-08 12:04:19,040][231885] Starting process rollout_proc13
+[2024-07-08 12:04:19,040][231885] Starting process rollout_proc14
+[2024-07-08 12:04:19,047][231885] Starting process rollout_proc15
+[2024-07-08 12:04:19,048][231885] Starting process rollout_proc16
+[2024-07-08 12:04:19,053][231885] Starting process rollout_proc17
+[2024-07-08 12:04:19,149][231885] Starting process rollout_proc18
+[2024-07-08 12:04:19,156][231885] Starting process rollout_proc19
+[2024-07-08 12:04:19,185][231885] Starting process rollout_proc20
+[2024-07-08 12:04:19,192][231885] Starting process rollout_proc21
+[2024-07-08 12:04:19,227][231885] Starting process rollout_proc22
+[2024-07-08 12:04:19,227][231885] Starting process rollout_proc23
+[2024-07-08 12:04:19,236][231885] Starting process rollout_proc24
+[2024-07-08 12:04:19,236][231885] Starting process rollout_proc25
+[2024-07-08 12:04:19,239][231885] Starting process rollout_proc26
+[2024-07-08 12:04:19,239][231885] Starting process rollout_proc27
+[2024-07-08 12:04:19,248][231885] Starting process rollout_proc28
+[2024-07-08 12:04:19,248][231885] Starting process rollout_proc29
+[2024-07-08 12:04:19,258][231885] Starting process rollout_proc30
+[2024-07-08 12:04:19,258][231885] Starting process rollout_proc31
+[2024-07-08 12:04:19,259][231885] Starting process rollout_proc32
+[2024-07-08 12:04:19,279][231885] Starting process rollout_proc35
+[2024-07-08 12:04:19,272][231885] Starting process rollout_proc34
+[2024-07-08 12:04:19,271][231885] Starting process rollout_proc33
+[2024-07-08 12:04:27,696][232039] Worker 4 uses CPU cores [4]
+[2024-07-08 12:04:29,209][231982] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-07-08 12:04:29,238][231982] Set environment var CUDA_VISIBLE_DEVICES to '0' (GPU indices [0]) for learning process 0
+[2024-07-08 12:04:29,308][231982] Num visible devices: 1
+[2024-07-08 12:04:29,390][232049] Worker 11 uses CPU cores [3]
+[2024-07-08 12:04:29,406][231982] WARNING! It is generally recommended to enable Fixed KL loss (https://arxiv.org/pdf/1707.06347.pdf) for continuous action tasks to avoid potential numerical issues. I.e. set --kl_loss_coeff=0.1
+[2024-07-08 12:04:29,406][231982] Setting fixed seed 0
+[2024-07-08 12:04:29,419][231982] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-07-08 12:04:29,419][231982] Initializing actor-critic model on device cuda:0
+[2024-07-08 12:04:29,501][232038] Worker 17 uses CPU cores [1]
+[2024-07-08 12:04:29,761][231982] Created Actor Critic model with architecture:
+[2024-07-08 12:04:29,762][231982] ActorCriticSeparateWeights(
+  (obs_normalizer): ObservationNormalizer()
+  (actor_encoder): QuadMultiHeadAttentionEncoder(
+    (self_embed_layer): Sequential(
+      (0): Linear(in_features=19, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (neighbor_embed_layer): Sequential(
+      (0): Linear(in_features=12, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (obstacle_embed_layer): Sequential(
+      (0): Linear(in_features=9, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (attention_layer): MultiHeadAttention(
+      (w_qs): Linear(in_features=256, out_features=1024, bias=False)
+      (w_ks): Linear(in_features=256, out_features=1024, bias=False)
+      (w_vs): Linear(in_features=256, out_features=1024, bias=False)
+      (attention): ScaledDotProductAttention()
+      (fc): Linear(in_features=1024, out_features=256, bias=False)
+      (layer_norm): LayerNorm((256,), eps=1e-06, elementwise_affine=True)
+    )
+    (feed_forward): Sequential(
+      (0): Linear(in_features=768, out_features=512, bias=True)
+      (1): Tanh()
+    )
+  )
+  (actor_core): ModelCoreIdentity()
+  (critic_encoder): QuadMultiHeadAttentionEncoder(
+    (self_embed_layer): Sequential(
+      (0): Linear(in_features=19, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (neighbor_embed_layer): Sequential(
+      (0): Linear(in_features=12, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (obstacle_embed_layer): Sequential(
+      (0): Linear(in_features=9, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (attention_layer): MultiHeadAttention(
+      (w_qs): Linear(in_features=256, out_features=1024, bias=False)
+      (w_ks): Linear(in_features=256, out_features=1024, bias=False)
+      (w_vs): Linear(in_features=256, out_features=1024, bias=False)
+      (attention): ScaledDotProductAttention()
+      (fc): Linear(in_features=1024, out_features=256, bias=False)
+      (layer_norm): LayerNorm((256,), eps=1e-06, elementwise_affine=True)
+    )
+    (feed_forward): Sequential(
+      (0): Linear(in_features=768, out_features=512, bias=True)
+      (1): Tanh()
+    )
+  )
+  (critic_core): ModelCoreIdentity()
+  (actor_decoder): MlpDecoder(
+    (mlp): Identity()
+  )
+  (critic_decoder): MlpDecoder(
+    (mlp): Identity()
+  )
+  (critic_linear): Linear(in_features=512, out_features=1, bias=True)
+  (action_parameterization): ActionParameterizationContinuousNonAdaptiveStddev(
+    (distribution_linear): Linear(in_features=512, out_features=4, bias=True)
+  )
+)
+[2024-07-08 12:04:29,802][232036] Worker 12 uses CPU cores [4]
+[2024-07-08 12:04:30,237][232108] Worker 32 uses CPU cores [0, 1]
+[2024-07-08 12:04:30,486][232009] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-07-08 12:04:30,499][232009] Set environment var CUDA_VISIBLE_DEVICES to '0' (GPU indices [0]) for inference process 0
+[2024-07-08 12:04:30,642][232009] Num visible devices: 1
+[2024-07-08 12:04:30,748][232053] Worker 20 uses CPU cores [4]
+[2024-07-08 12:04:30,958][232065] Worker 26 uses CPU cores [2]
+[2024-07-08 12:04:31,202][232067] Worker 28 uses CPU cores [4]
+[2024-07-08 12:04:31,226][232012] Worker 1 uses CPU cores [1]
+[2024-07-08 12:04:31,314][232037] Worker 14 uses CPU cores [6]
+[2024-07-08 12:04:31,376][232045] Worker 13 uses CPU cores [5]
+[2024-07-08 12:04:31,382][232034] Worker 2 uses CPU cores [2]
+[2024-07-08 12:04:31,654][232040] Worker 16 uses CPU cores [0]
+[2024-07-08 12:04:31,914][232099] Worker 35 uses CPU cores [6, 7]
+[2024-07-08 12:04:32,242][232110] Worker 34 uses CPU cores [4, 5]
+[2024-07-08 12:04:32,282][232052] Worker 21 uses CPU cores [5]
+[2024-07-08 12:04:32,415][232050] Worker 7 uses CPU cores [7]
+[2024-07-08 12:04:32,532][232035] Worker 9 uses CPU cores [1]
+[2024-07-08 12:04:32,618][232054] Worker 22 uses CPU cores [6]
+[2024-07-08 12:04:32,736][232075] Worker 29 uses CPU cores [5]
+[2024-07-08 12:04:32,775][232046] Worker 5 uses CPU cores [5]
+[2024-07-08 12:04:32,922][232043] Worker 8 uses CPU cores [0]
+[2024-07-08 12:04:33,002][232011] Worker 0 uses CPU cores [0]
+[2024-07-08 12:04:33,110][232048] Worker 3 uses CPU cores [3]
+[2024-07-08 12:04:33,138][232063] Worker 24 uses CPU cores [0]
+[2024-07-08 12:04:33,170][232051] Worker 19 uses CPU cores [3]
+[2024-07-08 12:04:33,201][232047] Worker 15 uses CPU cores [7]
+[2024-07-08 12:04:33,405][232042] Worker 10 uses CPU cores [2]
+[2024-07-08 12:04:33,419][232109] Worker 33 uses CPU cores [2, 3]
+[2024-07-08 12:04:33,424][232066] Worker 25 uses CPU cores [1]
+[2024-07-08 12:04:33,434][232044] Worker 6 uses CPU cores [6]
+[2024-07-08 12:04:33,484][232107] Worker 31 uses CPU cores [7]
+[2024-07-08 12:04:33,519][232041] Worker 18 uses CPU cores [2]
+[2024-07-08 12:04:33,729][232064] Worker 23 uses CPU cores [7]
+[2024-07-08 12:04:33,745][232098] Worker 27 uses CPU cores [3]
+[2024-07-08 12:04:33,752][232076] Worker 30 uses CPU cores [6]
+[2024-07-08 12:04:33,955][231982] Using optimizer <class 'torch.optim.adam.Adam'>
+[2024-07-08 12:04:33,956][231982] No checkpoints found
+[2024-07-08 12:04:33,956][231982] Did not load from checkpoint, starting from scratch!
+[2024-07-08 12:04:33,960][231982] Initialized policy 0 weights for model version 0
+[2024-07-08 12:04:33,966][231982] LearnerWorker_p0 finished initialization!
+[2024-07-08 12:04:33,967][231982] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-07-08 12:04:37,198][231885] Fps is (10 sec: nan, 60 sec: nan, 300 sec: nan). Total num frames: 0. Throughput: 0: nan. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:04:38,880][231885] Heartbeat connected on RolloutWorker_w0
+[2024-07-08 12:04:40,066][231885] Heartbeat connected on RolloutWorker_w23
+[2024-07-08 12:04:40,076][231885] Heartbeat connected on RolloutWorker_w21
+[2024-07-08 12:04:40,076][231885] Heartbeat connected on RolloutWorker_w27
+[2024-07-08 12:04:40,076][231885] Heartbeat connected on RolloutWorker_w24
+[2024-07-08 12:04:40,076][231885] Heartbeat connected on RolloutWorker_w28
+[2024-07-08 12:04:40,076][231885] Heartbeat connected on RolloutWorker_w16
+[2024-07-08 12:04:40,076][231885] Heartbeat connected on RolloutWorker_w32
+[2024-07-08 12:04:40,076][231885] Heartbeat connected on RolloutWorker_w31
+[2024-07-08 12:04:40,076][231885] Heartbeat connected on RolloutWorker_w5
+[2024-07-08 12:04:40,076][231885] Heartbeat connected on RolloutWorker_w34
+[2024-07-08 12:04:40,076][231885] Heartbeat connected on RolloutWorker_w19
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w33
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w20
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w13
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w15
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w4
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w3
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w14
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w25
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w8
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w6
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w35
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w30
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w18
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w26
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w10
+[2024-07-08 12:04:40,077][231885] Heartbeat connected on RolloutWorker_w2
+[2024-07-08 12:04:40,078][231885] Heartbeat connected on RolloutWorker_w9
+[2024-07-08 12:04:40,078][231885] Heartbeat connected on RolloutWorker_w22
+[2024-07-08 12:04:40,078][231885] Heartbeat connected on RolloutWorker_w1
+[2024-07-08 12:04:40,078][231885] Heartbeat connected on RolloutWorker_w17
+[2024-07-08 12:04:40,078][231885] Heartbeat connected on RolloutWorker_w29
+[2024-07-08 12:04:40,078][231885] Heartbeat connected on LearnerWorker_p0
+[2024-07-08 12:04:40,078][231885] Heartbeat connected on Batcher_0
+[2024-07-08 12:04:40,078][231885] Heartbeat connected on RolloutWorker_w7
+[2024-07-08 12:04:40,078][231885] Heartbeat connected on RolloutWorker_w11
+[2024-07-08 12:04:40,078][231885] Heartbeat connected on RolloutWorker_w12
+[2024-07-08 12:04:41,081][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:04:44,444][231885] Inference worker 0-0 is ready!
+[2024-07-08 12:04:44,447][231885] All inference workers are ready! Signal rollout workers to start!
+[2024-07-08 12:04:44,448][231885] Heartbeat connected on InferenceWorker_p0-w0
+[2024-07-08 12:04:46,113][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:04:53,891][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:04:56,124][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:05:01,081][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:05:06,076][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:05:11,075][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:05:16,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:05:21,094][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:05:26,160][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:05:31,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:05:36,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:05:41,080][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:05:46,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:05:51,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:05:56,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:06:01,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:06:02,735][232048] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:02,733][232051] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:02,781][232051] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:02,785][232048] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:02,990][232098] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:03,005][232098] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:03,664][232049] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:03,681][232049] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:06,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:06:08,149][232054] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:08,154][232054] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:08,448][232037] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:08,481][232037] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:08,558][232044] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:08,572][232044] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:08,575][232076] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:08,593][232076] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:09,156][232038] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:09,162][232035] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:09,208][232038] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:09,201][232035] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:09,263][232012] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:09,290][232012] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:09,510][232066] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:09,678][232066] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:10,125][232053] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:10,129][232067] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:10,159][232067] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:10,160][232053] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:10,537][232036] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:10,558][232036] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:10,778][232039] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:10,805][232039] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:11,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:06:12,632][232043] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:12,652][232040] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:12,649][232043] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:12,672][232040] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:12,868][232011] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:12,896][232011] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:13,036][232045] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:13,063][232075] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:13,079][232052] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:13,058][232045] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:13,074][232075] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:13,084][232052] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:13,148][232046] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:13,180][232046] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:13,419][232063] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:13,440][232063] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:13,930][232107] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:13,937][232064] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:13,945][232050] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:13,953][232107] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:13,957][232064] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:13,967][232050] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:14,129][232047] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:14,167][232047] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:14,191][232041] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:14,212][232041] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:14,224][232034] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:14,245][232034] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:14,411][232065] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:14,428][232065] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:14,501][232042] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:14,518][232042] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:14,982][232099] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:15,005][232099] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:15,179][232110] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:15,201][232110] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:15,802][232109] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:15,821][232109] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:16,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:06:16,086][231982] Saving ./train_dir/obstacles_multi/final_/00_final_see_0_q.n.age_8/checkpoint_p0/checkpoint_000000000_0.pth...
+[2024-07-08 12:06:18,177][232108] Decorrelating experience for 0 frames...
+[2024-07-08 12:06:18,255][232108] Decorrelating experience for 128 frames...
+[2024-07-08 12:06:21,075][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:06:26,078][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:06:31,078][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:06:36,083][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:06:41,079][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:06:46,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:06:51,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:06:56,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:07:01,077][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:07:06,092][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:07:11,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:07:16,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:07:21,074][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:07:26,077][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:07:31,088][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:07:36,094][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:07:41,130][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:07:46,592][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:07:51,159][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-07-08 12:07:56,105][231885] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:10:08,510][15634] Saving configuration to ./train_dir/obstacles_multi/final_/00_final_see_0_q.n.age_8/config.json...
+[2024-09-04 20:10:09,534][15634] Rollout worker 0 uses device cpu
+[2024-09-04 20:10:09,534][15634] Rollout worker 1 uses device cpu
+[2024-09-04 20:10:09,534][15634] Rollout worker 2 uses device cpu
+[2024-09-04 20:10:09,535][15634] Rollout worker 3 uses device cpu
+[2024-09-04 20:10:09,535][15634] Rollout worker 4 uses device cpu
+[2024-09-04 20:10:09,535][15634] Rollout worker 5 uses device cpu
+[2024-09-04 20:10:09,535][15634] Rollout worker 6 uses device cpu
+[2024-09-04 20:10:09,535][15634] Rollout worker 7 uses device cpu
+[2024-09-04 20:10:09,535][15634] Rollout worker 8 uses device cpu
+[2024-09-04 20:10:09,535][15634] Rollout worker 9 uses device cpu
+[2024-09-04 20:10:09,536][15634] Rollout worker 10 uses device cpu
+[2024-09-04 20:10:09,536][15634] Rollout worker 11 uses device cpu
+[2024-09-04 20:10:09,536][15634] Rollout worker 12 uses device cpu
+[2024-09-04 20:10:09,536][15634] Rollout worker 13 uses device cpu
+[2024-09-04 20:10:09,536][15634] Rollout worker 14 uses device cpu
+[2024-09-04 20:10:09,536][15634] Rollout worker 15 uses device cpu
+[2024-09-04 20:10:09,536][15634] Rollout worker 16 uses device cpu
+[2024-09-04 20:10:09,536][15634] Rollout worker 17 uses device cpu
+[2024-09-04 20:10:09,537][15634] Rollout worker 18 uses device cpu
+[2024-09-04 20:10:09,537][15634] Rollout worker 19 uses device cpu
+[2024-09-04 20:10:09,537][15634] Rollout worker 20 uses device cpu
+[2024-09-04 20:10:09,537][15634] Rollout worker 21 uses device cpu
+[2024-09-04 20:10:09,537][15634] Rollout worker 22 uses device cpu
+[2024-09-04 20:10:09,537][15634] Rollout worker 23 uses device cpu
+[2024-09-04 20:10:09,537][15634] Rollout worker 24 uses device cpu
+[2024-09-04 20:10:09,538][15634] Rollout worker 25 uses device cpu
+[2024-09-04 20:10:09,538][15634] Rollout worker 26 uses device cpu
+[2024-09-04 20:10:09,538][15634] Rollout worker 27 uses device cpu
+[2024-09-04 20:10:09,538][15634] Rollout worker 28 uses device cpu
+[2024-09-04 20:10:09,538][15634] Rollout worker 29 uses device cpu
+[2024-09-04 20:10:09,538][15634] Rollout worker 30 uses device cpu
+[2024-09-04 20:10:09,538][15634] Rollout worker 31 uses device cpu
+[2024-09-04 20:10:09,539][15634] Rollout worker 32 uses device cpu
+[2024-09-04 20:10:09,539][15634] Rollout worker 33 uses device cpu
+[2024-09-04 20:10:09,539][15634] Rollout worker 34 uses device cpu
+[2024-09-04 20:10:09,539][15634] Rollout worker 35 uses device cpu
+[2024-09-04 20:10:09,673][15634] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-09-04 20:10:09,673][15634] InferenceWorker_p0-w0: min num requests: 12
+[2024-09-04 20:10:09,864][15634] Starting all processes...
+[2024-09-04 20:10:09,864][15634] Starting process learner_proc0
+[2024-09-04 20:10:12,105][15634] Starting all processes...
+[2024-09-04 20:10:12,116][15634] Starting process inference_proc0-0
+[2024-09-04 20:10:12,116][15634] Starting process rollout_proc0
+[2024-09-04 20:10:12,116][15634] Starting process rollout_proc1
+[2024-09-04 20:10:12,117][15634] Starting process rollout_proc2
+[2024-09-04 20:10:12,131][15634] Starting process rollout_proc3
+[2024-09-04 20:10:12,137][15634] Starting process rollout_proc4
+[2024-09-04 20:10:12,139][15634] Starting process rollout_proc5
+[2024-09-04 20:10:12,139][15634] Starting process rollout_proc6
+[2024-09-04 20:10:12,144][15634] Starting process rollout_proc7
+[2024-09-04 20:10:12,146][15634] Starting process rollout_proc8
+[2024-09-04 20:10:12,146][15634] Starting process rollout_proc9
+[2024-09-04 20:10:12,146][15634] Starting process rollout_proc10
+[2024-09-04 20:10:12,147][15634] Starting process rollout_proc11
+[2024-09-04 20:10:12,150][15634] Starting process rollout_proc12
+[2024-09-04 20:10:12,150][15634] Starting process rollout_proc13
+[2024-09-04 20:10:12,152][15634] Starting process rollout_proc14
+[2024-09-04 20:10:12,532][15634] Starting process rollout_proc26
+[2024-09-04 20:10:12,152][15634] Starting process rollout_proc15
+[2024-09-04 20:10:12,362][15634] Starting process rollout_proc17
+[2024-09-04 20:10:12,363][15634] Starting process rollout_proc20
+[2024-09-04 20:10:12,363][15634] Starting process rollout_proc19
+[2024-09-04 20:10:12,363][15634] Starting process rollout_proc18
+[2024-09-04 20:10:12,377][15634] Starting process rollout_proc21
+[2024-09-04 20:10:12,377][15634] Starting process rollout_proc22
+[2024-09-04 20:10:12,386][15634] Starting process rollout_proc23
+[2024-09-04 20:10:12,920][15634] Starting process rollout_proc34
+[2024-09-04 20:10:12,528][15634] Starting process rollout_proc25
+[2024-09-04 20:10:12,360][15634] Starting process rollout_proc16
+[2024-09-04 20:10:12,612][15634] Starting process rollout_proc27
+[2024-09-04 20:10:12,613][15634] Starting process rollout_proc28
+[2024-09-04 20:10:12,681][15634] Starting process rollout_proc29
+[2024-09-04 20:10:12,682][15634] Starting process rollout_proc30
+[2024-09-04 20:10:12,744][15634] Starting process rollout_proc31
+[2024-09-04 20:10:12,797][15634] Starting process rollout_proc32
+[2024-09-04 20:10:12,877][15634] Starting process rollout_proc33
+[2024-09-04 20:10:12,460][15634] Starting process rollout_proc24
+[2024-09-04 20:10:12,965][15634] Starting process rollout_proc35
+[2024-09-04 20:10:31,903][15791] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-09-04 20:10:31,917][15791] Set environment var CUDA_VISIBLE_DEVICES to '0' (GPU indices [0]) for inference process 0
+[2024-09-04 20:10:32,122][15791] Num visible devices: 1
+[2024-09-04 20:10:32,191][15634] Heartbeat connected on InferenceWorker_p0-w0
+[2024-09-04 20:10:39,342][15829] Worker 9 uses CPU cores [1]
+[2024-09-04 20:10:39,355][15970] Worker 27 uses CPU cores [3]
+[2024-09-04 20:10:39,377][15795] Worker 6 uses CPU cores [6]
+[2024-09-04 20:10:39,394][15634] Heartbeat connected on RolloutWorker_w9
+[2024-09-04 20:10:39,577][15859] Worker 14 uses CPU cores [6]
+[2024-09-04 20:10:39,811][15634] Heartbeat connected on RolloutWorker_w6
+[2024-09-04 20:10:39,827][15634] Heartbeat connected on RolloutWorker_w27
+[2024-09-04 20:10:39,831][15850] Worker 12 uses CPU cores [4]
+[2024-09-04 20:10:39,877][15634] Heartbeat connected on RolloutWorker_w14
+[2024-09-04 20:10:39,905][15960] Worker 28 uses CPU cores [4]
+[2024-09-04 20:10:40,018][15634] Heartbeat connected on RolloutWorker_w12
+[2024-09-04 20:10:40,042][15634] Heartbeat connected on RolloutWorker_w28
+[2024-09-04 20:10:40,110][15920] Worker 22 uses CPU cores [6]
+[2024-09-04 20:10:40,417][15820] Worker 8 uses CPU cores [0]
+[2024-09-04 20:10:40,450][15634] Heartbeat connected on RolloutWorker_w8
+[2024-09-04 20:10:40,564][15814] Worker 5 uses CPU cores [5]
+[2024-09-04 20:10:40,628][15945] Worker 34 uses CPU cores [4, 5]
+[2024-09-04 20:10:40,662][15634] Heartbeat connected on RolloutWorker_w5
+[2024-09-04 20:10:40,685][15634] Heartbeat connected on RolloutWorker_w34
+[2024-09-04 20:10:40,848][15634] Heartbeat connected on RolloutWorker_w22
+[2024-09-04 20:10:40,929][15919] Worker 23 uses CPU cores [7]
+[2024-09-04 20:10:41,124][15794] Worker 0 uses CPU cores [0]
+[2024-09-04 20:10:41,137][15771] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-09-04 20:10:41,140][15771] Set environment var CUDA_VISIBLE_DEVICES to '0' (GPU indices [0]) for learning process 0
+[2024-09-04 20:10:41,203][15771] Num visible devices: 1
+[2024-09-04 20:10:41,232][15634] Heartbeat connected on RolloutWorker_w0
+[2024-09-04 20:10:41,255][15771] WARNING! It is generally recommended to enable Fixed KL loss (https://arxiv.org/pdf/1707.06347.pdf) for continuous action tasks to avoid potential numerical issues. I.e. set --kl_loss_coeff=0.1
+[2024-09-04 20:10:41,256][15771] Setting fixed seed 0
+[2024-09-04 20:10:41,263][15634] Heartbeat connected on Batcher_0
+[2024-09-04 20:10:41,264][15634] Heartbeat connected on RolloutWorker_w23
+[2024-09-04 20:10:41,303][15771] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-09-04 20:10:41,304][15771] Initializing actor-critic model on device cuda:0
+[2024-09-04 20:10:41,416][15867] Worker 11 uses CPU cores [3]
+[2024-09-04 20:10:41,575][15813] Worker 7 uses CPU cores [7]
+[2024-09-04 20:10:41,584][15792] Worker 1 uses CPU cores [1]
+[2024-09-04 20:10:41,648][15634] Heartbeat connected on RolloutWorker_w11
+[2024-09-04 20:10:41,703][15634] Heartbeat connected on RolloutWorker_w1
+[2024-09-04 20:10:41,775][15847] Worker 13 uses CPU cores [5]
+[2024-09-04 20:10:41,775][15634] Heartbeat connected on RolloutWorker_w7
+[2024-09-04 20:10:41,785][15935] Worker 16 uses CPU cores [0]
+[2024-09-04 20:10:41,864][15634] Heartbeat connected on RolloutWorker_w13
+[2024-09-04 20:10:41,901][15804] Worker 4 uses CPU cores [4]
+[2024-09-04 20:10:41,987][15908] Worker 18 uses CPU cores [2]
+[2024-09-04 20:10:42,046][15634] Heartbeat connected on RolloutWorker_w16
+[2024-09-04 20:10:42,086][15634] Heartbeat connected on RolloutWorker_w4
+[2024-09-04 20:10:42,124][15803] Worker 3 uses CPU cores [3]
+[2024-09-04 20:10:42,135][15771] Created Actor Critic model with architecture:
+[2024-09-04 20:10:42,136][15771] ActorCriticSeparateWeights(
+  (obs_normalizer): ObservationNormalizer()
+  (actor_encoder): QuadMultiHeadAttentionEncoder(
+    (self_embed_layer): Sequential(
+      (0): Linear(in_features=19, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (neighbor_embed_layer): Sequential(
+      (0): Linear(in_features=12, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (obstacle_embed_layer): Sequential(
+      (0): Linear(in_features=9, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (attention_layer): MultiHeadAttention(
+      (w_qs): Linear(in_features=256, out_features=1024, bias=False)
+      (w_ks): Linear(in_features=256, out_features=1024, bias=False)
+      (w_vs): Linear(in_features=256, out_features=1024, bias=False)
+      (attention): ScaledDotProductAttention()
+      (fc): Linear(in_features=1024, out_features=256, bias=False)
+      (layer_norm): LayerNorm((256,), eps=1e-06, elementwise_affine=True)
+    )
+    (feed_forward): Sequential(
+      (0): Linear(in_features=768, out_features=512, bias=True)
+      (1): Tanh()
+    )
+  )
+  (actor_core): ModelCoreIdentity()
+  (critic_encoder): QuadMultiHeadAttentionEncoder(
+    (self_embed_layer): Sequential(
+      (0): Linear(in_features=19, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (neighbor_embed_layer): Sequential(
+      (0): Linear(in_features=12, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (obstacle_embed_layer): Sequential(
+      (0): Linear(in_features=9, out_features=256, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+      (3): Tanh()
+    )
+    (attention_layer): MultiHeadAttention(
+      (w_qs): Linear(in_features=256, out_features=1024, bias=False)
+      (w_ks): Linear(in_features=256, out_features=1024, bias=False)
+      (w_vs): Linear(in_features=256, out_features=1024, bias=False)
+      (attention): ScaledDotProductAttention()
+      (fc): Linear(in_features=1024, out_features=256, bias=False)
+      (layer_norm): LayerNorm((256,), eps=1e-06, elementwise_affine=True)
+    )
+    (feed_forward): Sequential(
+      (0): Linear(in_features=768, out_features=512, bias=True)
+      (1): Tanh()
+    )
+  )
+  (critic_core): ModelCoreIdentity()
+  (actor_decoder): MlpDecoder(
+    (mlp): Identity()
+  )
+  (critic_decoder): MlpDecoder(
+    (mlp): Identity()
+  )
+  (critic_linear): Linear(in_features=512, out_features=1, bias=True)
+  (action_parameterization): ActionParameterizationContinuousNonAdaptiveStddev(
+    (distribution_linear): Linear(in_features=512, out_features=4, bias=True)
+  )
+)
+[2024-09-04 20:10:42,157][15887] Worker 17 uses CPU cores [1]
+[2024-09-04 20:10:42,204][15634] Heartbeat connected on RolloutWorker_w18
+[2024-09-04 20:10:42,234][15905] Worker 21 uses CPU cores [5]
+[2024-09-04 20:10:42,235][15972] Worker 30 uses CPU cores [6]
+[2024-09-04 20:10:42,321][15634] Heartbeat connected on RolloutWorker_w30
+[2024-09-04 20:10:42,328][15848] Worker 26 uses CPU cores [2]
+[2024-09-04 20:10:42,373][15634] Heartbeat connected on RolloutWorker_w3
+[2024-09-04 20:10:42,381][15634] Heartbeat connected on RolloutWorker_w21
+[2024-09-04 20:10:42,464][15634] Heartbeat connected on RolloutWorker_w17
+[2024-09-04 20:10:42,518][16030] Worker 24 uses CPU cores [0]
+[2024-09-04 20:10:42,601][15634] Heartbeat connected on RolloutWorker_w24
+[2024-09-04 20:10:42,610][16038] Worker 35 uses CPU cores [6, 7]
+[2024-09-04 20:10:42,645][15634] Heartbeat connected on RolloutWorker_w26
+[2024-09-04 20:10:42,769][15982] Worker 31 uses CPU cores [7]
+[2024-09-04 20:10:42,789][15899] Worker 20 uses CPU cores [4]
+[2024-09-04 20:10:42,849][15634] Heartbeat connected on RolloutWorker_w35
+[2024-09-04 20:10:42,856][15634] Heartbeat connected on RolloutWorker_w31
+[2024-09-04 20:10:42,856][15634] Heartbeat connected on RolloutWorker_w20
+[2024-09-04 20:10:42,889][16022] Worker 33 uses CPU cores [2, 3]
+[2024-09-04 20:10:42,992][16021] Worker 32 uses CPU cores [0, 1]
+[2024-09-04 20:10:43,068][15634] Heartbeat connected on RolloutWorker_w33
+[2024-09-04 20:10:43,150][15634] Heartbeat connected on RolloutWorker_w32
+[2024-09-04 20:10:43,186][15936] Worker 25 uses CPU cores [1]
+[2024-09-04 20:10:43,195][15771] Using optimizer <class 'torch.optim.adam.Adam'>
+[2024-09-04 20:10:43,229][15882] Worker 15 uses CPU cores [7]
+[2024-09-04 20:10:43,271][15634] Heartbeat connected on RolloutWorker_w15
+[2024-09-04 20:10:43,281][15839] Worker 10 uses CPU cores [2]
+[2024-09-04 20:10:43,301][15793] Worker 2 uses CPU cores [2]
+[2024-09-04 20:10:43,317][15634] Heartbeat connected on RolloutWorker_w25
+[2024-09-04 20:10:43,391][15634] Heartbeat connected on RolloutWorker_w10
+[2024-09-04 20:10:43,394][15634] Heartbeat connected on RolloutWorker_w2
+[2024-09-04 20:10:43,431][15895] Worker 19 uses CPU cores [3]
+[2024-09-04 20:10:43,463][15634] Heartbeat connected on RolloutWorker_w19
+[2024-09-04 20:10:43,654][16019] Worker 29 uses CPU cores [5]
+[2024-09-04 20:10:43,685][15634] Heartbeat connected on RolloutWorker_w29
+[2024-09-04 20:10:44,856][15771] Loading state from checkpoint ./train_dir/obstacles_multi/final_/00_final_see_0_q.n.age_8/checkpoint_p0/checkpoint_000000000_0.pth...
+[2024-09-04 20:10:44,893][15771] Loading model from checkpoint
+[2024-09-04 20:10:44,896][15771] Loaded experiment state at self.train_step=0, self.env_steps=0
+[2024-09-04 20:10:44,899][15771] Initialized policy 0 weights for model version 0
+[2024-09-04 20:10:44,904][15771] LearnerWorker_p0 finished initialization!
+[2024-09-04 20:10:44,905][15771] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2024-09-04 20:10:44,907][15634] Heartbeat connected on LearnerWorker_p0
+[2024-09-04 20:10:45,163][15634] Inference worker 0-0 is ready!
+[2024-09-04 20:10:45,163][15634] All inference workers are ready! Signal rollout workers to start!
+[2024-09-04 20:10:46,605][15634] Fps is (10 sec: nan, 60 sec: nan, 300 sec: nan). Total num frames: 0. Throughput: 0: nan. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:10:51,595][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:10:56,595][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:11:01,595][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:11:06,595][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:11:11,595][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:11:16,595][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:11:21,599][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:11:26,627][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:11:31,609][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:11:36,622][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:11:41,614][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:11:46,608][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:11:51,599][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:11:56,605][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:12:01,608][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:12:05,346][15771] Saving ./train_dir/obstacles_multi/final_/00_final_see_0_q.n.age_8/checkpoint_p0/checkpoint_000000000_0.pth...
+[2024-09-04 20:12:06,602][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:12:11,631][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:12:16,604][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:12:21,623][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:12:26,631][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:12:31,651][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:12:36,700][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:12:41,605][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:12:46,616][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:12:51,720][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:12:56,668][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:13:01,609][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:13:06,637][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:13:11,627][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:13:16,633][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:13:21,625][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:13:26,701][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:13:31,623][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:13:36,610][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:13:41,614][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:13:46,805][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:13:51,701][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:13:56,835][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:14:01,740][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:14:07,190][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:14:11,617][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:14:12,007][15771] Saving ./train_dir/obstacles_multi/final_/00_final_see_0_q.n.age_8/checkpoint_p0/checkpoint_000000000_0.pth...
+[2024-09-04 20:14:16,628][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:14:21,616][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:14:26,782][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2024-09-04 20:14:31,794][15634] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

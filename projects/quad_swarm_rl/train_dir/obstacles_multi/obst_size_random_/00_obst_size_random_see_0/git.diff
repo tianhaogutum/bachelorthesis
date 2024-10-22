@@ -1,0 +1,38 @@
+diff --git a/swarm_rl/runs/obstacles/obst_size_random.py b/swarm_rl/runs/obstacles/obst_size_random.py
+index 138b169..813b724 100644
+--- a/swarm_rl/runs/obstacles/obst_size_random.py
++++ b/swarm_rl/runs/obstacles/obst_size_random.py
+@@ -10,7 +10,7 @@ _params = ParamGrid(
+ OBSTACLE_MODEL_CLI = QUAD_BASELINE_CLI_8 + (
+     ' --num_workers=36 --num_envs_per_worker=4 --quads_num_agents=8 '
+     '--quads_neighbor_visible_num=6 --quads_neighbor_obs_type=pos_vel --quads_encoder_type=attention '
+-    '--with_wandb=True --wandb_project=Quad-Swarm-RL --wandb_user=multi-drones '
++    '--with_wandb=False --wandb_project=Quad-Swarm-RL --wandb_user=multi-drones '
+     '--quads_domain_random=True --quads_obst_size_random=True '
+     '--quads_obst_size_min=0.3 --quads_obst_size_max=0.6 '
+     '--wandb_group=obst_size_random'
+@@ -22,4 +22,4 @@ _experiment = Experiment(
+     _params.generate_params(randomize=False),
+ )
+ 
+-RUN_DESCRIPTION = RunDescription("obstacles_multi", experiments=[_experiment])
+\ No newline at end of file
++RUN_DESCRIPTION = RunDescription("obstacles_multi", experiments=[_experiment])
+diff --git a/swarm_rl/runs/obstacles/quad_obstacle_baseline.py b/swarm_rl/runs/obstacles/quad_obstacle_baseline.py
+index f5f05d6..4d42593 100644
+--- a/swarm_rl/runs/obstacles/quad_obstacle_baseline.py
++++ b/swarm_rl/runs/obstacles/quad_obstacle_baseline.py
+@@ -1,5 +1,5 @@
+ QUAD_BASELINE_CLI_8 = (
+-    'python -m swarm_rl.train --env=quadrotor_multi --train_for_env_steps=1000000000 --algo=APPO --use_rnn=False '
++    'python -m swarm_rl.train --env=quadrotor_multi --train_for_env_steps=100000 --algo=APPO --use_rnn=False '
+     '--num_workers=36 --num_envs_per_worker=4 --learning_rate=0.0001 --ppo_clip_value=5.0 --recurrence=1 '
+     '--nonlinearity=tanh --actor_critic_share_weights=False --policy_initialization=xavier_uniform '
+     '--adaptive_stddev=False --with_vtrace=False --max_policy_lag=100000000 --rnn_size=256 '
+@@ -19,4 +19,4 @@ QUAD_BASELINE_CLI_8 = (
+     # Obstacles
+     '--quads_use_obstacles=True --quads_obst_spawn_area 8 8 --quads_obst_density=0.2 --quads_obst_size=0.6 '
+     '--quads_obst_collision_reward=5.0 --quads_obstacle_obs_type=octomap --quads_use_downwash=True'
+-)
+\ No newline at end of file
++)
